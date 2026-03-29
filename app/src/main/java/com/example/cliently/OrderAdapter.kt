@@ -34,9 +34,9 @@ class OrderAdapter(
             // Step 3: Show the Date string exactly as stored in DB
             binding.tvOrderDate.text = order.date
             
-            // Step 4: Format the price using currency standards (US Locale for "$")
-            val formatter = NumberFormat.getCurrencyInstance(Locale.US)
-            binding.tvOrderPrice.text = formatter.format(order.productPrice)
+            // Step 4: Format the price using Ugandan Shilling (UGX) standards
+            val formatter = NumberFormat.getInstance(Locale.US)
+            binding.tvOrderPrice.text = "${formatter.format(order.productPrice)} UGX"
         }
     }
 

@@ -28,11 +28,11 @@ For testing and grading, use the following admin account:
 
 ## 🎓 Academic Compliance
 This project fulfills the requirements for:
-*   **Task 1**: Requirements Analysis & Use Cases.
-*   **Task 2**: System Design & Database Schema.
-*   **Task 3**: Core Application Development (CRUD, SQLite, Intents).
-*   **Task 4**: Functional Testing.
-*   **Task 5**: Project Documentation.
+*   **Task 1**: [Requirements Analysis & Use Cases](file:///Users/andama/AndroidStudioProjects/Cliently/docs/Task1_Requirements_Analysis.md)
+*   **Task 2**: System Design & Database Schema (Found in Task 5)
+*   **Task 3**: Core Application Development (Source Code)
+*   **Task 4**: [Functional Testing](file:///Users/andama/AndroidStudioProjects/Cliently/docs/Task4_Testing_Evaluation.md)
+*   **Task 5**: [Project Report](file:///Users/andama/AndroidStudioProjects/Cliently/docs/Task5_Project_Report.md)
 
 ---
 **Coursework Submission - April 2026**

@@ -29,9 +29,9 @@ class ProductAdapter(
         fun bind(product: Product) {
             binding.tvItemProductName.text = product.name
             
-            // Format price as currency
-            val formatter = NumberFormat.getCurrencyInstance(Locale.US)
-            binding.tvItemProductPrice.text = formatter.format(product.price)
+            // Format price as UGX
+            val formatter = NumberFormat.getInstance(Locale.US)
+            binding.tvItemProductPrice.text = "${formatter.format(product.price)} UGX"
 
             // Generate a simple initial for the avatar
             binding.tvProductInitial.text = product.name.firstOrNull()?.uppercaseChar()?.toString() ?: "P"

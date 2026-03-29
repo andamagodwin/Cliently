@@ -5,6 +5,7 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cliently.databinding.ActivityAddOrderBinding
+import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -59,7 +60,7 @@ class AddOrderActivity : AppCompatActivity() {
         products = dbHelper.getAllProducts()
         
         // Step 2: Format the labels for the dropdown list (Name + Price)
-        val productNames = products.map { "${it.name} — ${"$"}${"%.2f".format(it.price)}" }
+        val productNames = products.map { "${it.name} — ${NumberFormat.getInstance().format(it.price)} UGX" }
         
         // Step 3: Create an ArrayAdapter (Bridge between our list and the Spinner UI component)
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, productNames)
