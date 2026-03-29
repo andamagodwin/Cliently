@@ -11,16 +11,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cliently">
+
+        <!-- LAUNCHER: Login screen -->
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true"
-            android:theme="@style/Theme.Cliently">
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".CustomerListActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".CustomerDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".CustomerListActivity"/>
+
+        <activity
+            android:name=".AddOrderActivity"
+            android:exported="false"
+            android:parentActivityName=".CustomerDetailActivity"
+            android:windowSoftInputMode="adjustResize"/>
+
     </application>
 
 </manifest>
