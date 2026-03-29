@@ -14,7 +14,7 @@
         android:orientation="vertical"
         android:gravity="center"
         android:background="@drawable/bg_gradient_header"
-        android:paddingTop="72dp"
+        android:paddingTop="110dp"
         android:paddingBottom="40dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/cardLogin"
