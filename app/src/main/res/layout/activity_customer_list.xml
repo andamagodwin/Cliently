@@ -100,7 +100,7 @@
         android:layout_margin="20dp"
         android:text="Add Customer"
         app:icon="@android:drawable/ic_input_add"
-        app:backgroundTint="@color/purple_500"
+        app:backgroundTint="@color/yellow_500"
         android:textColor="@color/white"
         app:iconTint="@color/white"/>
 

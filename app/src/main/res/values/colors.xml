@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Brand purples -->
-    <color name="purple_700">#5B21B6</color>
-    <color name="purple_500">#7C3AED</color>
-    <color name="purple_200">#C4B5FD</color>
+    <!-- Brand yellows -->
+    <color name="yellow_700">#D97706</color>
+    <color name="yellow_500">#F59E0B</color>
+    <color name="yellow_200">#FDE68A</color>
 
     <!-- Backgrounds -->
     <color name="bg_dark">#0F1117</color>

@@ -37,7 +37,7 @@
                 android:layout_height="64dp"
                 android:gravity="center"
                 android:background="@drawable/bg_avatar_circle_white"
-                android:textColor="@color/purple_500"
+                android:textColor="@color/yellow_500"
                 android:textSize="24sp"
                 android:fontFamily="sans-serif-black"
                 android:layout_marginEnd="16dp"/>
@@ -137,7 +137,7 @@
                 android:layout_height="wrap_content"
                 android:text="0 orders"
                 android:textSize="13sp"
-                android:textColor="@color/purple_200"/>
+                android:textColor="@color/yellow_200"/>
         </LinearLayout>
 
         <!-- No orders empty state -->
@@ -192,7 +192,7 @@
         android:layout_margin="20dp"
         android:text="New Order"
         app:icon="@android:drawable/ic_input_add"
-        app:backgroundTint="@color/purple_500"
+        app:backgroundTint="@color/yellow_500"
         android:textColor="@color/white"
         app:iconTint="@color/white"/>
 

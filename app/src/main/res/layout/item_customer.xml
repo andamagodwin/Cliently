@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:text="email@example.com"
                 android:textSize="12sp"
-                android:textColor="@color/purple_200"
+                android:textColor="@color/yellow_200"
                 android:layout_marginTop="2dp"/>
         </LinearLayout>
 
