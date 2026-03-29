@@ -133,7 +133,7 @@
                 android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
-                android:text="Sign In"
+                android:text="Login"
                 android:textSize="16sp"
                 android:letterSpacing="0.05"
                 android:fontFamily="sans-serif-medium"

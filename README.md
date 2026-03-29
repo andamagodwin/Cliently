@@ -28,6 +28,7 @@ For testing and grading, use the following admin account:
 
 ## 🎓 Academic Compliance
 This project fulfills the requirements for:
+*   **Full Technical Guide**: [Beginner-Friendly Project Documentation](file:///Users/andama/AndroidStudioProjects/Cliently/docs/FULL_TECHNICAL_GUIDE.md)
 *   **Task 1**: [Requirements Analysis & Use Cases](file:///Users/andama/AndroidStudioProjects/Cliently/docs/Task1_Requirements_Analysis.md)
 *   **Task 2**: System Design & Database Schema (Found in Task 5)
 *   **Task 3**: Core Application Development (Source Code)
