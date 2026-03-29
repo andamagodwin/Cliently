@@ -228,7 +228,7 @@ class ClientlyDBHelper(context: Context) :
         return customer
     }
 
-    // ── PRODUCT QUERIES ───────────────────────────────────────────────────────
+    // ── PRODUCT QUERIES & CRUD ──────────────────────────────────────────────
 
     /**
      * Retrieves the entire product catalog.
@@ -248,6 +248,29 @@ class ClientlyDBHelper(context: Context) :
         }
         cursor.close()
         return products
+    }
+
+    /**
+     * Update an existing product's details.
+     * Required for: "Edit Product" feature.
+     */
+    fun updateProduct(id: Int, name: String, price: Double): Int {
+        val db = writableDatabase
+        val values = ContentValues().apply {
+            put(COL_PROD_NAME, name)
+            put(COL_PROD_PRICE, price)
+        }
+        // Returns the number of rows affected
+        return db.update(TABLE_PRODUCTS, values, "$COL_PROD_ID = ?", arrayOf(id.toString()))
+    }
+
+    /**
+     * Delete a product by its ID.
+     * Required for: "Delete Product" feature.
+     */
+    fun deleteProduct(id: Int): Int {
+        val db = writableDatabase
+        return db.delete(TABLE_PRODUCTS, "$COL_PROD_ID = ?", arrayOf(id.toString()))
     }
 
     // ── ORDER TRANSACTIONS ────────────────────────────────────────────────────
@@ -297,5 +320,28 @@ class ClientlyDBHelper(context: Context) :
             put(COL_ORDER_DATE, date)
         }
         return db.insert(TABLE_ORDERS, null, values)
+    }
+
+    // ── EXTRA CRUD FOR CUSTOMERS ─────────────────────────────────────────────
+
+    /**
+     * Update an existing customer's contact info.
+     */
+    fun updateCustomer(id: Int, name: String, phone: String, email: String): Int {
+        val db = writableDatabase
+        val values = ContentValues().apply {
+            put(COL_CUST_NAME, name)
+            put(COL_CUST_PHONE, phone)
+            put(COL_CUST_EMAIL, email)
+        }
+        return db.update(TABLE_CUSTOMERS, values, "$COL_CUST_ID = ?", arrayOf(id.toString()))
+    }
+
+    /**
+     * Remove a customer from the database.
+     */
+    fun deleteCustomer(id: Int): Int {
+        val db = writableDatabase
+        return db.delete(TABLE_CUSTOMERS, "$COL_CUST_ID = ?", arrayOf(id.toString()))
     }
 }

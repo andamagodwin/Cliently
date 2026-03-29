@@ -133,11 +133,13 @@ class CustomerListActivity : AppCompatActivity() {
         return true
     }
 
-    /**
-     * Define what happens when a menu item is clicked.
-     */
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
+            R.id.action_products -> {
+                val intent = Intent(this, ProductListActivity::class.java)
+                startActivity(intent)
+                true
+            }
             R.id.action_logout -> {
                 // Exit this screen (returns the user to the LoginActivity)
                 finish()

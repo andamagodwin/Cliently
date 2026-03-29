@@ -38,6 +38,17 @@
             android:parentActivityName=".CustomerDetailActivity"
             android:windowSoftInputMode="adjustResize"/>
 
+        <activity
+            android:name=".ProductListActivity"
+            android:exported="false"
+            android:parentActivityName=".CustomerListActivity"/>
+
+        <activity
+            android:name=".AddProductActivity"
+            android:exported="false"
+            android:parentActivityName=".ProductListActivity"
+            android:windowSoftInputMode="adjustResize"/>
+
     </application>
 
 </manifest>
